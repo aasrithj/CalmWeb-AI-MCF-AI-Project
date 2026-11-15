@@ -1,0 +1,63 @@
+{
+ "svd_dimensions": 200,
+ "features_before_reduction": 3000,
+ "variance_kept_by_svd": 0.3692,
+ "test_examples": 1915,
+ "accuracy": 0.9802,
+ "precision": 0.8284,
+ "recall": 0.9396,
+ "f1": 0.8805,
+ "confusion_matrix": [
+  [
+   1737,
+   29
+  ],
+  [
+   9,
+   140
+  ]
+ ],
+ "by_source": {
+  "sms_messages": {
+   "examples": 1115,
+   "accuracy": 0.9695
+  },
+  "bbc_sentences": {
+   "examples": 800,
+   "accuracy": 0.995
+  }
+ },
+ "cv_f1_by_dimensions": {
+  "2": 0.22408720428976156,
+  "5": 0.545621083317587,
+  "10": 0.7184759350814949,
+  "20": 0.7471190459135378,
+  "30": 0.7774755435778699,
+  "50": 0.7944334609991698,
+  "100": 0.8373687524236464,
+  "200": 0.8665255618869747
+ },
+ "cv_f1_without_reduction": 0.9289914045449373,
+ "no_reduction_test": {
+  "accuracy": 0.9906,
+  "f1": 0.9392,
+  "numbers_in_model": 3000
+ },
+ "numbers_in_final_classifier": 200,
+ "team_written_check": {
+  "note": "20 sentences written by the team to sanity-check pop-up style text; not a dataset, not used for training",
+  "popup_caught": 4,
+  "popup_total": 10,
+  "content_kept": 10,
+  "content_total": 10,
+  "missed_popups": [
+   "Don't miss out! Sign up now for exclusive deals.",
+   "Summer Sale: up to 50% off sneakers. Shop now!",
+   "Get the app for a better experience. Download now, it's free!",
+   "Turn on notifications so you never miss a story.",
+   "Wait! Before you go, get 10% off with code SAVE10.",
+   "Win a brand new iPhone! Enter the contest today."
+  ],
+  "wrongly_flagged_content": []
+ }
+}
